@@ -16,6 +16,7 @@
     "gatsby-plugin-svgr": "^2.0.1",
     "gatsby-source-filesystem": "^2.0.8",
     "gatsby-transformer-sharp": "^2.1.8",
+    "gh-pages": "^3.1.0",
     "mdbreact": "4.10.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
@@ -32,6 +33,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",

@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/HappiNest",
   siteMetadata: {
     title: 'MDB React Starter',
     description: 'MDB React starter for material design landing page',
