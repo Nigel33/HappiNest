@@ -10,6 +10,7 @@ class customLink extends Component {
     }
 
     handleClick = e => {
+        
         if (!this.props.disabled) {
             e.stopPropagation();
             let cursorPos = {
@@ -20,6 +21,35 @@ class customLink extends Component {
             this.setState({ cursorPos: cursorPos });
         }
     };
+
+    handleNavigation = (location) => {
+        navigate(location)
+        
+        // console.log(location)
+        // const locations = location.split('#')             
+        // console.log(locations)
+
+        // if (locations.length === 1) {            
+        //     navigate(locations[0])            
+        // } else if (locations.length > 1) {
+        //     let firstLocation = document.getElementById(locations[0])    
+                            
+        //     if (firstLocation) {                               
+        //         firstLocation.scrollIntoView({ 
+        //             behavior: 'smooth' })              
+        //     } else {
+        //         navigate(locations[1])
+        //         firstLocation = document.getElementById(locations[0])   
+        //         console.log(firstLocation)
+        //         // firstLocation.scrollIntoView({ 
+        //             // behavior: 'smooth' })      
+        //     }       
+        // }
+
+       
+
+               
+    }
 
     render() {
         const {
@@ -45,8 +75,7 @@ class customLink extends Component {
                 onMouseUp={this.handleClick}
                 onTouchStart={this.handleClick}
                 role="link"
-                onClick={() => navigate(to)}
-            >
+                onClick={() => this.handleNavigation(to)}            >
                 <span className="nav-link">
                   {children}
                 </span>

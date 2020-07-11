@@ -3,9 +3,8 @@ import {
   MDBContainer, MDBNavbar,  MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
   MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon
 } from "mdbreact";
-import { Link } from 'gatsby';
 import CustomNavLink from './customLink';
-import { ReactComponent as Logo } from "../images/light-bulb.svg";
+import logo from "../images/logo.png";
 
 class NavbarPage extends Component {
   state = {
@@ -18,29 +17,33 @@ class NavbarPage extends Component {
 
   render() {
     return (
-      <MDBNavbar color="indigo" dark expand="md">
-        <MDBContainer>
-          <Logo  />
-          <Link to="/" className="navbar-brand">
-            <strong className="ml-3 white-text">Creative Agency</strong></Link>
+      <MDBNavbar hg-navbar expand="md">
+        <MDBContainer>                    
+          <CustomNavLink to="/" className="navbar-brand">
+            <img src={logo} style={{height: '50px'}} alt="Responsive image" />
+          </CustomNavLink>
           <MDBNavbarToggler name="navbar-toggler" onClick={this.toggleCollapse} />
           <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
             <MDBNavbarNav left>
+              <MDBNavbarNav left>
                 <CustomNavLink to="#!">Home</CustomNavLink>
-                <CustomNavLink to="#!">About</CustomNavLink>
-                <CustomNavLink to="#!">Projects</CustomNavLink>
-                <MDBNavItem>
-                <MDBDropdown>
-                  <MDBDropdownToggle nav caret>
-                    <div className="d-none d-md-inline">About</div>
-                  </MDBDropdownToggle>
-                  <MDBDropdownMenu right>
-                    <MDBDropdownItem href="#!">Contact</MDBDropdownItem>
-                    <MDBDropdownItem href="#!">Articles</MDBDropdownItem>
-                    <MDBDropdownItem href="#!">Testimonials</MDBDropdownItem>
-                  </MDBDropdownMenu>
-                </MDBDropdown>
-              </MDBNavItem>
+                <CustomNavLink to="/">Buy AIEOU</CustomNavLink>
+                <CustomNavLink to="/about/">About Us</CustomNavLink>
+                <CustomNavLink to="#!">Contact Us</CustomNavLink>
+                <CustomNavLink to="#!">Subscribe</CustomNavLink>
+                <CustomNavLink to="#!">Blog</CustomNavLink>
+                {/* <MDBNavItem>
+                  <MDBDropdown>
+                    <MDBDropdownToggle nav caret>
+                      <div className="d-none d-md-inline">Blog</div>
+                    </MDBDropdownToggle>
+                    <MDBDropdownMenu right>
+                      <MDBDropdownItem href="#!">News</MDBDropdownItem>
+                      <MDBDropdownItem href="#!">Sign Up</MDBDropdownItem>
+                    </MDBDropdownMenu>
+                  </MDBDropdown>
+                </MDBNavItem> */}
+              </MDBNavbarNav>
             </MDBNavbarNav>
             <MDBNavbarNav right>
               <div className="d-flex align-items-center">
