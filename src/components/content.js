@@ -12,25 +12,25 @@ const FeaturesPage = () => {
             What's in the box?
           </h2>          
         <MDBRow className="mb-4">
-            <MDBCol style={{ maxWidth: "22rem" }}>
-              <div style={{ maxWidth: "10rem" }}>
+          <MDBCol className="d-flex justify-content-center" style={{ maxWidth: "22rem" }}>
+              <div className="text-center" style={{ maxWidth: "10rem" }}>
                 <p className="text-center">36 bronze cards</p>
                 <MDBCard>
                   <MDBCardImage className="img-fluid" src={bronze} alt="" waves />
                 </MDBCard>
               </div>              
             </MDBCol>
-            <MDBCol style={{ maxWidth: "22rem" }}>
-              <div style={{ maxWidth: "10rem" }}>
-                <p className="text-center">36 silver cards</p>
+            <MDBCol className="d-flex justify-content-center" style={{ maxWidth: "22rem" }}>
+              <div className="text-center" style={{ maxWidth: "10rem" }}>
+                <p>36 silver cards</p>
                 <MDBCard>
                   <MDBCardImage className="img-fluid" src={silver} alt="" waves />
                 </MDBCard>
               </div>       
           </MDBCol>
-          <MDBCol style={{ maxWidth: "22rem" }}>
-            <div style={{ maxWidth: "10rem" }}>
-              <p className="text-center">36 gold cards</p>
+          <MDBCol className="d-flex justify-content-center" style={{ maxWidth: "22rem" }}>
+            <div className="text-center" style={{ maxWidth: "10rem" }}>
+              <p>36 gold cards</p>
               <MDBCard>
                 <MDBCardImage className="img-fluid" src={gold} alt="" waves />
               </MDBCard>
@@ -39,8 +39,8 @@ const FeaturesPage = () => {
         </MDBRow>
         <MDBRow>          
           <MDBCol>
-            <div style={{ margin: "0 auto", maxWidth: "10rem" }}>
-              <p className="text-center">5 vowel pieces</p>
+            <div className="text-center" style={{ margin: "0 auto", maxWidth: "10rem" }}>
+              <p>5 vowel pieces</p>
               <MDBCard>
                 <MDBCardImage className="img-fluid" src={vowels} alt="" waves />
               </MDBCard>

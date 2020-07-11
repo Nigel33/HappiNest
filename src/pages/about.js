@@ -22,7 +22,7 @@ export default function About() {
             A bird’s nest symbolizes the safe and comfortable confines of home where families and friends gather to socialise. Play is one form of socialising that sparks fun and happiness. At HappiNest Games, we strive to promote play among family members and friends in the comforts of home through games that entertain yet provide educational and social values.
           </p>
         </section> 
-        <section className="get-in-touch orange-background text-center py-4 text-light">
+        <section id="contact" className="get-in-touch orange-background text-center py-4 text-light">
           <p>Want to get in touch with us?</p>
           <p>Contact us at:</p>
           <p>Email: happinestgames@gmail.com</p>
@@ -44,7 +44,7 @@ export default function About() {
             <img className="mx-2" style={{ width: '40px'}} src={instagram} />
           </div>          
         </section> */}
-        <section className="py-4 text-center">
+        <section id="subscribe" className="py-4 text-center">
           <div className="text-center pt-2 pb-3">
             <img src={logo} />
           </div>

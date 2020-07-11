@@ -5,6 +5,7 @@ import {
 } from "mdbreact";
 import CustomNavLink from './customLink';
 import logo from "../images/logo.png";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 class NavbarPage extends Component {
   state = {
@@ -17,33 +18,44 @@ class NavbarPage extends Component {
 
   render() {
     return (
-      <MDBNavbar hg-navbar expand="md">
+      <MDBNavbar color="white" light expand="md">
         <MDBContainer>                    
           <CustomNavLink to="/" className="navbar-brand">
             <img src={logo} style={{height: '50px'}} alt="Responsive image" />
           </CustomNavLink>
-          <MDBNavbarToggler name="navbar-toggler" onClick={this.toggleCollapse} />
+          <MDBNavbarToggler color="dark" onClick={this.toggleCollapse} />
           <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
             <MDBNavbarNav left>
-              <MDBNavbarNav left>
-                <CustomNavLink to="#!">Home</CustomNavLink>
-                <CustomNavLink to="/">Buy AIEOU</CustomNavLink>
-                <CustomNavLink to="/about/">About Us</CustomNavLink>
-                <CustomNavLink to="#!">Contact Us</CustomNavLink>
-                <CustomNavLink to="#!">Subscribe</CustomNavLink>
-                <CustomNavLink to="#!">Blog</CustomNavLink>
-                {/* <MDBNavItem>
-                  <MDBDropdown>
-                    <MDBDropdownToggle nav caret>
-                      <div className="d-none d-md-inline">Blog</div>
-                    </MDBDropdownToggle>
-                    <MDBDropdownMenu right>
-                      <MDBDropdownItem href="#!">News</MDBDropdownItem>
-                      <MDBDropdownItem href="#!">Sign Up</MDBDropdownItem>
-                    </MDBDropdownMenu>
-                  </MDBDropdown>
-                </MDBNavItem> */}
-              </MDBNavbarNav>
+              <MDBNavItem className="mr-4">
+                <AnchorLink to="/" title="Home">
+                  <span>Home</span>
+                </AnchorLink>
+              </MDBNavItem>
+              <MDBNavItem className="mr-4">
+                <AnchorLink to="/#buy-now" title="Buy AIEOU">
+                  <span>Buy AIEOU</span>
+                </AnchorLink>
+              </MDBNavItem>
+              <MDBNavItem className="mr-4">
+                <AnchorLink to="/about" title="Our team">
+                  <span>About Us</span>
+                </AnchorLink>
+              </MDBNavItem>
+              <MDBNavItem className="mr-4">
+                <AnchorLink to="/about#contact" title="Our team">
+                  <span>Contact Us</span>
+                </AnchorLink>
+              </MDBNavItem>
+              <MDBNavItem className="mr-4">
+                <AnchorLink to="/about#subscribe" title="Our team">
+                  <span>Subscribe</span>
+                </AnchorLink>  
+              </MDBNavItem>
+              <MDBNavItem>
+                <AnchorLink to="/about" title="Our team">
+                  <span>Blog</span>
+                </AnchorLink>
+              </MDBNavItem>
             </MDBNavbarNav>
             <MDBNavbarNav right>
               <div className="d-flex align-items-center">
@@ -60,7 +72,7 @@ class NavbarPage extends Component {
             </MDBNavbarNav>
           </MDBCollapse>
         </MDBContainer>
-      </MDBNavbar>
+      </MDBNavbar>        
     );
   }
 }

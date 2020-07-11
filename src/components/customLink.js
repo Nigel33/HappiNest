@@ -23,7 +23,7 @@ class customLink extends Component {
     };
 
     handleNavigation = (location) => {
-        navigate(location)
+        navigate
         
         // console.log(location)
         // const locations = location.split('#')             
