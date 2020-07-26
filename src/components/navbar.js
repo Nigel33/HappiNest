@@ -32,7 +32,7 @@ class NavbarPage extends Component {
                 </AnchorLink>
               </MDBNavItem>
               <MDBNavItem className="mr-4">
-                <AnchorLink to="/#buy-now" title="Buy AIEOU">
+                <AnchorLink to="/#buy-now" title="Buy AIEOU" stripHash>
                   <span>Buy AIEOU</span>
                 </AnchorLink>
               </MDBNavItem>
@@ -42,12 +42,12 @@ class NavbarPage extends Component {
                 </AnchorLink>
               </MDBNavItem>
               <MDBNavItem className="mr-4">
-                <AnchorLink to="/about#contact" title="Our team">
+                <AnchorLink to="/about#contact" title="Our team" stripHash>
                   <span>Contact Us</span>
                 </AnchorLink>
               </MDBNavItem>
               <MDBNavItem className="mr-4">
-                <AnchorLink to="/about#subscribe" title="Our team">
+                <AnchorLink to="/about#subscribe" title="Our team" stripHash>
                   <span>Subscribe</span>
                 </AnchorLink>  
               </MDBNavItem>
