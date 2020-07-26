@@ -7,7 +7,12 @@ module.exports = {
     author: 'anna-morawska',
   },
   plugins: [
-    `gatsby-plugin-anchor-links`,
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: 200
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
