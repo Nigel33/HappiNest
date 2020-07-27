@@ -26,7 +26,7 @@ export default function About() {
           <p>Want to get in touch with us?</p>
           <p>Contact us at:</p>
           <p>Email: happinestgames@gmail.com</p>
-          <p>Whatsapp: ?????</p>
+          <p>Whatsapp: +6017-6373108</p>
           <p>We are also looking for retailers and distributors</p>
           <p>If you are interested, kindly contact us via email or Whatsapp.</p>
           <p><strong>Wondering what's trending on HappiNest Games?</strong></p>          

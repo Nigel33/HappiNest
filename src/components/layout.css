@@ -9,6 +9,11 @@ body {
     font-size: 14px;      
 }
 
+.nav-item {  
+  font-weight: 700;
+  color: #006400;
+}
+
 .hg-navbar {
   margin: 0;
   background-color: white;
@@ -20,7 +25,7 @@ body {
 }
 
 .orange-background {
-    background-color: #d66932;
+    background-color: #f7702c;    
 }
 
 .green-background {
@@ -101,10 +106,14 @@ strong {
     bottom: 10px !important;
     left: 50%;
     margin-left: -25px;
-    padding: 15px 20px;
-    font-size: 20px;
+    padding: 15px 18px;
+    font-size: 18px;
 }
 
+.hero-cta-button.full-width.test.test-2.test-4 {    
+  padding: 15px 18px;
+  font-size: 18px;
+}
 
 
 .page-footer {

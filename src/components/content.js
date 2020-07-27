@@ -4,6 +4,7 @@ import bronze from "../images/bronze.png"
 import silver from "../images/silver.png"
 import gold from "../images/gold.png"
 import vowels from "../images/vowels.jpg"
+import booklet from '../images/booklet.png'
 
 const FeaturesPage = () => {
     return (
@@ -12,7 +13,7 @@ const FeaturesPage = () => {
             What's in the box?
           </h2>          
         <MDBRow className="mb-4">
-          <MDBCol className="d-flex justify-content-center" style={{ maxWidth: "22rem" }}>
+          <MDBCol className="d-flex justify-content-center">
               <div className="text-center" style={{ maxWidth: "10rem" }}>
                 <p className="text-center">36 bronze cards</p>
                 <MDBCard>
@@ -20,7 +21,7 @@ const FeaturesPage = () => {
                 </MDBCard>
               </div>              
             </MDBCol>
-            <MDBCol className="d-flex justify-content-center" style={{ maxWidth: "22rem" }}>
+            <MDBCol className="d-flex justify-content-center">
               <div className="text-center" style={{ maxWidth: "10rem" }}>
                 <p>36 silver cards</p>
                 <MDBCard>
@@ -28,7 +29,7 @@ const FeaturesPage = () => {
                 </MDBCard>
               </div>       
           </MDBCol>
-          <MDBCol className="d-flex justify-content-center" style={{ maxWidth: "22rem" }}>
+          <MDBCol className="d-flex justify-content-center" >
             <div className="text-center" style={{ maxWidth: "10rem" }}>
               <p>36 gold cards</p>
               <MDBCard>
@@ -43,6 +44,14 @@ const FeaturesPage = () => {
               <p>5 vowel pieces</p>
               <MDBCard>
                 <MDBCardImage className="img-fluid" src={vowels} alt="" waves />
+              </MDBCard>
+            </div>       
+          </MDBCol>
+          <MDBCol>
+            <div className="text-center" style={{ margin: "0 auto", maxWidth: "10rem" }}>
+              <p>Rules booklet</p>
+              <MDBCard>
+                <MDBCardImage className="img-fluid" src={booklet} alt="" waves />
               </MDBCard>
             </div>       
           </MDBCol>
