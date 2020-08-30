@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-material-design-for-bootstrap",
+  "name": "happinest-games",
   "private": true,
-  "description": "A simple starter which lets you quickly start developing with Gastby and Material Design For Bootstrap",
+  "description": "HappinestGames",
   "version": "0.1.0",
-  "author": "Anna Morawska <a.morawska@mdbootstrap.com>",
+  "author": "Nigel Hing",
   "dependencies": {
     "@svgr/webpack": "^4.1.0",
     "gatsby": "^2.0.76",
@@ -33,7 +33,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build && gh-pages -d public",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",

@@ -11,7 +11,7 @@ const CarouselPage = () => {
           <div className="position-relative"> 
             <div className="hero-box"></div>
             {/* <MDBMask overlay="black-slight" /> */}
-            <MDBBtn className="hero-cta-button full-width test test-2 test-3" outline color="white">Buy Now</MDBBtn>
+            {/* <MDBBtn className="hero-cta-button full-width test test-2 test-3">Buy Now</MDBBtn> */}
           </div>          
         </MDBView>
       </>

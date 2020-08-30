@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import {
   MDBContainer, MDBNavbar,  MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
-  MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon
+  MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon, MDBBtn
 } from "mdbreact";
 import CustomNavLink from './customLink';
-import logo from "../images/logo.png";
+import logo from "../images/Logo.png";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 class NavbarPage extends Component {
@@ -18,24 +18,19 @@ class NavbarPage extends Component {
 
   render() {
     return (
-      <MDBNavbar color="white" light expand="md">
-        <MDBContainer>                    
-          <CustomNavLink to="/" className="navbar-brand">
+      <>
+        <MDBNavbar color="white" light expand="md" style={{ minHeight: '70px' }}>
+          <AnchorLink to="/" className="navbar-brand">
             <img src={logo} style={{height: '50px'}} alt="Responsive image" />
-          </CustomNavLink>
-          <MDBNavbarToggler color="dark" onClick={this.toggleCollapse} />
+          </AnchorLink>
+          <MDBNavbarToggler onClick={this.toggleCollapse} />
           <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
             <MDBNavbarNav left>
-              <MDBNavItem className="mr-4">
-                <AnchorLink to="/" title="Home">
-                  <span>Home</span>
-                </AnchorLink>
-              </MDBNavItem>
-              <MDBNavItem className="mr-4">
-                <AnchorLink to="/#buy-now" title="Buy AIEOU">
+              <MDBNavItem>
+                <AnchorLink className="mr-4" to="/#buy-now" title="Buy AIEOU">
                   <span>Buy AIEOU</span>
                 </AnchorLink>
-              </MDBNavItem>
+              </MDBNavItem>              
               <MDBNavItem className="mr-4">
                 <AnchorLink to="/about" title="Our team">
                   <span>About Us</span>
@@ -52,29 +47,33 @@ class NavbarPage extends Component {
                 </AnchorLink>  
               </MDBNavItem>
               <MDBNavItem>
-                <AnchorLink to="/about" title="Our team">
+                <AnchorLink to="https://happinestfamily.blogspot.com/" target="_blank" title="BLog">
                   <span>Blog</span>
                 </AnchorLink>
               </MDBNavItem>
             </MDBNavbarNav>
             <MDBNavbarNav right>
-              <div className="d-flex align-items-center">
-                <CustomNavLink to="#!">
+              <div className="d-flex align-items-center">               
+                {
+                  !this.state.open && <MDBBtn className="mx-auto hero-cta-button full-width test test-2 test-3">Buy Now</MDBBtn>
+                }                
+                <CustomNavLink to="https://www.facebook.com/happinestgames/?ref=py_c" target="_blank">
                   <MDBIcon fab icon="facebook" className="ml-1" />
                 </CustomNavLink>
-                <CustomNavLink to="#!">
-                  <MDBIcon fab icon="twitter" className="ml-1" />
-                </CustomNavLink>
-                <CustomNavLink to="#!">
-                  <MDBIcon fab icon="linkedin" className="ml-1" />
+                <CustomNavLink to="https://www.instagram.com/happinest.games/" target="_blank">
+                  <MDBIcon fab icon="instagram" className="ml-1" />
+                </CustomNavLink>                
+                <CustomNavLink to="https://api.whatsapp.com/send?phone=+60176373108&text=%20Hello" target="_blank">
+                  <MDBIcon fab icon="whatsapp" className="ml-1" />
                 </CustomNavLink>
               </div>
             </MDBNavbarNav>
           </MDBCollapse>
-        </MDBContainer>
-      </MDBNavbar>        
+        </MDBNavbar>        
+      </>        
     );
   }
 }
 
 export default NavbarPage;
+

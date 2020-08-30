@@ -10,7 +10,7 @@ class customLink extends Component {
     }
 
     handleClick = e => {
-        
+        window.open(this.props.to, '_blank')
         if (!this.props.disabled) {
             e.stopPropagation();
             let cursorPos = {

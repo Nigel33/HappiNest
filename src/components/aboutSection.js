@@ -7,7 +7,7 @@ import memoryBuzz from '../images/memoryBuzz.png'
 
 const FeaturesPage = () => {
     return (
-        <MDBContainer tag="section"  className="text-center my-5">
+        <MDBContainer tag="section"  className="text-center">
           <h2 className="h3-responsive font-weight-bold my-5">
             AIEOU is an educational spelling game with  multisensory elements
           </h2>

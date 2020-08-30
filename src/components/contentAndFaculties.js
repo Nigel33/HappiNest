@@ -13,7 +13,7 @@ const ContentAndFaculties = () => {
     <div> 
       <h4 className="text-center py-4">AIEOU offers these benefits</h4>     
       <MDBRow className="m-0" center>        
-        <MDBCol className="align-items-center justify-content-center d-flex attribute-text visual-perception p-0">          
+        <MDBCol md="3" sm="6" size="6" className="align-items-center justify-content-center d-flex attribute-text visual-perception p-0">          
           <MDBView className="w-100">
             <div className="visual-perception align-items-center justify-content-center d-flex">
                 <p className="attribute-text top-most d-flex">
@@ -23,7 +23,7 @@ const ContentAndFaculties = () => {
             <MDBMask overlay="indigo-light" />
           </MDBView>    
         </MDBCol>
-        <MDBCol className="align-items-center justify-content-center d-flex attribute-text analytics p-0">
+        <MDBCol md="3" size="6" sm="6" className="align-items-center justify-content-center d-flex attribute-text analytics p-0">
           <MDBView className="w-100">
             <div className="memory align-items-center justify-content-center d-flex">
               <p className="attribute-text top-most d-flex">
@@ -33,7 +33,7 @@ const ContentAndFaculties = () => {
             <MDBMask overlay="indigo-light" />
           </MDBView>
         </MDBCol>
-        <MDBCol className="align-items-center justify-content-center d-flex attribute-text memory p-0">
+        <MDBCol md="3" size="6" sm="6"  className="align-items-center justify-content-center d-flex attribute-text memory p-0">
           <MDBView className="w-100">
             <div className="reflexes align-items-center justify-content-center d-flex">
               <p className="attribute-text top-most d-flex">
@@ -43,7 +43,7 @@ const ContentAndFaculties = () => {
             <MDBMask overlay="indigo-light"/>
           </MDBView>
         </MDBCol>
-        <MDBCol className="p-0">
+        <MDBCol md="3" size="6" sm="6" className="p-0">
           <MDBView className="w-100">            
             <div className="analytics align-items-center justify-content-center d-flex">        
                 <p className="attribute-text top-most d-flex">

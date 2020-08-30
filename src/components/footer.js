@@ -1,5 +1,6 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter, MDBBtn, MDBIcon } from "mdbreact";
+import CustomNavLink from './customLink';
 
 const Footer = () => {
     return (
@@ -8,17 +9,22 @@ const Footer = () => {
             <MDBRow className="pb-3">
                 <MDBCol md="12">
                     <div className="mb-5 flex-center">
-                        <MDBIcon fab icon="facebook-f" size="lg" className="mx-2 white-text mr-md-4"></MDBIcon>                        
-                        <MDBIcon fab icon="google-plus-g" size="lg" className="mx-2 white-text mr-md-4"></MDBIcon>                        
-                        <MDBIcon fab icon="instagram" size="lg" className="mx-2 white-text mr-md-4"></MDBIcon>   
-                        <MDBIcon fab icon="whatsapp" size="lg" className="mx-2 white-text mr-md-4"></MDBIcon>                      
+                        <CustomNavLink to="https://www.facebook.com/happinestgames/?ref=py_c" target="_blank">
+                            <MDBIcon fab icon="facebook-f" size="lg" className="mx-2 white-text mr-md-4"></MDBIcon>      
+                        </CustomNavLink>
+                        <CustomNavLink to="https://www.instagram.com/happinest.games/" target="_blank">
+                            <MDBIcon fab icon="instagram" size="lg" className="mx-2 white-text mr-md-4"></MDBIcon>   
+                        </CustomNavLink>
+                        <CustomNavLink to="https://api.whatsapp.com/send?phone=+60176373108&text=%20Hello" target="_blank">
+                            <MDBIcon fab icon="whatsapp" size="lg" className="mx-2 white-text mr-md-4"></MDBIcon>                          
+                        </CustomNavLink>                                              
                     </div>
                 </MDBCol>
             </MDBRow>
             </MDBContainer>
             <div className="footer-copyright text-center py-3">
                 <MDBContainer fluid className="text-light">
-                    &copy; {new Date().getFullYear()} Copyright: HappiNestGames                
+                    &copy; {new Date().getFullYear()} Copyright: HappiNestGames                             
                 </MDBContainer>
             </div>
         </div>

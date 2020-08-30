@@ -24,8 +24,7 @@ class App extends Component {
         <Layout>
           <SEO title="Home" keywords={[`gatsby`, `MDBReact`, `react`, `Material Design For Bootstrap`]} />
           <Hero />          
-          <main>
-            <Link to="about">Contact</Link>
+          <main>            
             <AboutSection />
             <ContentAndFaculties />
             <BoxContent />
@@ -38,7 +37,7 @@ class App extends Component {
             {/* <MultipleGames /> */}
             <div id="buy-now" className="buy-now orange-background" style={{ paddingTop: '80px' }}>
               <h4>Can't wait to play AIEOU?</h4>              
-              <MDBBtn className="hero-cta-button full-width test test-2 test-4" outline color="white">Buy Now</MDBBtn>
+              <MDBBtn className="hero-cta-button full-width test test-2 test-4">Buy Now</MDBBtn>
               <div className="text-center pt-4 pb-3">
                 <img style={{width: "400px" }} src={gameLogo} />
               </div>          

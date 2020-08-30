@@ -1,10 +1,9 @@
 module.exports = {
-  pathPrefix: "/HappiNest",
   siteMetadata: {
-    title: 'MDB React Starter',
-    description: 'MDB React starter for material design landing page',
-    siteUrl: 'https://gatsby-starter.mdbootstrap.com',
-    author: 'anna-morawska',
+    title: 'Happinest Games',
+    description: 'Happinest Games',
+    siteUrl: 'https://happinestgames.com',
+    author: 'nige-hing',
   },
   plugins: [
     {
@@ -34,7 +33,7 @@ module.exports = {
         background_color: `#4B5EB8`,
         theme_color: `#68008C`,
         display: `standalone`,
-        icon: `${__dirname}/src/images/mdb-react-small.png`, // This path is relative to the root of the site.
+        icon: `${__dirname}/src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
