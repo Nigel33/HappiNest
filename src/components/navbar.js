@@ -4,7 +4,7 @@ import {
   MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon, MDBBtn
 } from "mdbreact";
 import CustomNavLink from './customLink';
-import logo from "../images/Logo.png";
+import logo from "../images/logo.png";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 class NavbarPage extends Component {
@@ -21,7 +21,7 @@ class NavbarPage extends Component {
       <>
         <MDBNavbar color="white" light expand="md" style={{ minHeight: '70px' }}>
           <AnchorLink to="/" className="navbar-brand">
-            <img src={logo} style={{height: '50px'}} alt="Responsive image" />
+            <img src={logo} style={{height: '50px'}} alt="Logo" />
           </AnchorLink>
           <MDBNavbarToggler onClick={this.toggleCollapse} />
           <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
