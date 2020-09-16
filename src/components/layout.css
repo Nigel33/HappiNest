@@ -4,6 +4,10 @@ body {
   scroll-behavior: smooth;
 }
 
+h2 {
+  margin-bottom: 0px;
+}
+
 body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;      
@@ -123,7 +127,7 @@ strong {
   height: 55vh;
   background-image: url("../images/reflexes.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .top-most {
@@ -171,3 +175,15 @@ strong {
     padding: 4rem 0;
 }
 
+.video {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+}
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

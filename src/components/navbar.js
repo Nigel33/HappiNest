@@ -25,12 +25,7 @@ class NavbarPage extends Component {
           </AnchorLink>
           <MDBNavbarToggler onClick={this.toggleCollapse} />
           <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
-            <MDBNavbarNav left>
-              <MDBNavItem>
-                <AnchorLink className="mr-4" to="/#buy-now" title="Buy AIEOU">
-                  <span>Buy AIEOU</span>
-                </AnchorLink>
-              </MDBNavItem>              
+            <MDBNavbarNav left>                        
               <MDBNavItem className="mr-4">
                 <AnchorLink to="/about" title="Our team">
                   <span>About Us</span>
@@ -55,7 +50,11 @@ class NavbarPage extends Component {
             <MDBNavbarNav right>
               <div className="d-flex align-items-center">               
                 {
-                  !this.state.open && <MDBBtn className="mx-auto hero-cta-button full-width test test-2 test-3">Buy Now</MDBBtn>
+                  !this.state.open && (
+                    <a target="_blank" href="https://shopee.com.my/AIEOU-Multisensory-Spelling-Card-Game-4-Games-in-1-Family-Card-Game-Fun-Exciting!-Original-Made-in-Malaysia-i.275485349.4052662424">
+                      <MDBBtn className="mx-auto hero-cta-button full-width test test-2 test-3">Buy Now</MDBBtn>
+                    </a>
+                  )                  
                 }                
                 <CustomNavLink to="https://www.facebook.com/happinestgames/?ref=py_c" target="_blank">
                   <MDBIcon fab icon="facebook" className="ml-1" />
